@@ -39,7 +39,7 @@ import geopandas
 # In[9]:
 
 
-cardio = pd.read_excel(r'C:\Users\jeffp\Documents\Personal\Learning\Coursrera\Assignment\final assignment\cardio_deaths.xlsx')
+cardio = pd.read_excel(r'xxxxxxxxxxxxxx\cardio_deaths.xlsx')
 
 cardio['fipslen'] = cardio['County Code'].astype(str).map(len)
 cardio.loc[cardio['fipslen'] == 4, 'FIPS'] = '0' + cardio['County Code'].astype(str) 
@@ -110,15 +110,10 @@ location_data.head()
 # In[6]:
 
 
-CLIENT_ID = 'XXXXXXXXXXXXXXXXX' # your Foursquare ID
-CLIENT_SECRET = 'XXXXXXXXXXXXXXXXXXXXXX' # your Foursquare Secret
+CLIENT_ID = '' # your Foursquare ID
+CLIENT_SECRET = '' # your Foursquare Secret
 VERSION = '20180605' # Foursquare API version
 CATEGORY_ID = '4bf58dd8d48988d120951735,4bf58dd8d48988d147941735,4bf58dd8d48988d148941735,4bf58dd8d48988d16c941735,4bf58dd8d48988d16e941735,4bf58dd8d48988d16f941735,4bf58dd8d48988d179941735,4bf58dd8d48988d1ca941735,4bf58dd8d48988d1cb941735,4d4ae6fc7a7b7dea34424761,56aa371be4b08b9a8d57350b' #Gun Shop Category
-
-print('Your credentails:')
-print('CLIENT_ID: ' + CLIENT_ID)
-print('CLIENT_SECRET:' + CLIENT_SECRET)
-print('CATEGORY_ID:' + CATEGORY_ID)
 
 
 # The following cell pulls a subset of data to test the Foursquare approach.  Ultimately it is not used in the final analysis, but was used to test until I was sure the process would work.
@@ -194,7 +189,7 @@ print('Foursquare Data Acquisition Complete')
 
 
 from xlsxwriter import Workbook
-writer = pd.ExcelWriter(r'C:\Users\jeffp\Documents\Desktop\Personal\Learning\Coursrera\Assignment\final assignment\ff_venues.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter(r'xxxxxxxxxx', engine='xlsxwriter')
 ff_venues.to_excel(writer, index = False, header=True)
 writer.save()
 
@@ -202,7 +197,7 @@ writer.save()
 # In[10]:
 
 
-ff_venues = pd.read_excel(r'C:\Users\jeffp\Documents\Personal\Learning\Coursrera\Assignment\final assignment\ff_venues.xlsx')
+ff_venues = pd.read_excel(r'xxxxxxxxxxxxx.xlsx')
 ff_venues.head(10)
 
 
