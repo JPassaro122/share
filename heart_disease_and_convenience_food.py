@@ -1,3 +1,8 @@
+
+# This file contains the code that produces the analysis located at:
+# https://www.linkedin.com/pulse/heart-disease-pandemic-its-correlation-convenience-density-passaro/
+# The Heart Disease Pandemic and its correlation to Convenience Restaurant Density
+
 #!/usr/bin/env python
 # coding: utf-8
 
