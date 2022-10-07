@@ -1,3 +1,7 @@
+# This file contains the code that produces the analysis located at:
+# https://www.linkedin.com/pulse/health-plan-quality-improvement-cost-containment-versus-jeff-passaro/?trackingId=G01LQMNGQWS%2FK7Xp6e09kw%3D%3D
+# Health Plan Quality Improvement & Cost Containment Investment Versus Growth
+
 
 #--------------------------------------------------------------------
 # This code develops an analysis that shows growth vs investment in 
